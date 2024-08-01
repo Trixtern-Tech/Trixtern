@@ -10,6 +10,7 @@
 body{
     background-color: #F8F7FF;
     color: #B8B8FF;
+    overflow: hidden;
 }
 
 h1{
@@ -22,6 +23,10 @@ p{
 }
 section{
     max-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container p{
     display: flex;
@@ -39,4 +44,10 @@ footer span{
     font-size: 12px;
 
 
+}
+
+@media (max-width : 768px){
+    h1{
+        font-size: 2rem;
+    }
 }
