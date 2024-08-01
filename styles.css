@@ -22,13 +22,21 @@ p{
     color: #7b65fa;
 }
 section{
-    max-height: 100vh;
+    /* max-height: 100vh; */
     max-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .container p{
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,6 +46,9 @@ section{
 footer{
     display: flex;
     justify-content: center;
+    position: absolute;
+    bottom: 1px;
+    right: 49%;
 }
 footer span{
     color: #000;
@@ -49,5 +60,8 @@ footer span{
 @media (max-width : 768px){
     h1{
         font-size: 2rem;
+    }
+    footer{
+        right: 47%;
     }
 }
